@@ -10,6 +10,7 @@ describe('Browser Testing', function() {
       page = await customPage.build();
       await page.goto('http://localhost:3000');
     });
+    
     afterEach(async ()=>{
       await page.close();
     });
